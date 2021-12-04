@@ -1,7 +1,7 @@
-"use strict"
+"use strict";
 
 if (9 == 9) {
-    console.log('ok!')
+    console.log('ok!');
 } else {
     console.log('Error');
 }
