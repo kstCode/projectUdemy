@@ -30,3 +30,16 @@ logger();
 const calc = (a, b) => {                        //arrow function
     return a + b;
 }; 
+
+
+
+
+
+const usdCurr = 28;
+
+
+function convert(amount, curr) {
+    console.log(usdCurr * amount);
+}
+
+convert(500, usdCurr);
