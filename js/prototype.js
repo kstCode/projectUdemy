@@ -12,8 +12,10 @@ const Vasya = {
 
 };
 
-Object.setPrototypeOf(Vasya, soldier);
+// Vasya.__proto__= soldier;   //старый, не используемый способ
+
+Object.setPrototypeOf(Vasya, soldier); //устанавливаем прототип для Vasya от soldier
 
 console.log(Vasya.armor);
 
-const John = Object.create(soldier);
+const John = Object.create(soldier); //создаем прототипную связь для нового объекта John от soldier
