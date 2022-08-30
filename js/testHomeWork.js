@@ -66,4 +66,37 @@
 // transferWaitors(restorantData);
 
 
- 
+//  function pow(x, n) {
+//     let result = 1;
+
+//     for (let i = 0; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+//  }
+//  console.log(pow(2,6));
+
+//  function powRec(x, n) {
+//     if (n === 1) {
+//         return x;
+//     } else {
+//         return x * powRec(x, n - 1);
+//     }
+    
+//  }
+//  console.log(powRec(2,44));
+
+
+function factorial(num) {
+    let result = 1;
+    if (typeof(num) !== 'number' || num % 1 !== 0) {
+        return `Проверьте введенные данные`;
+    } else if (num <= 0) {
+        return 1;
+    } else if (num === 1) {
+        return 1;
+    } else {
+        return result *= num * factorial(num - 1);
+    }
+}
+console.log(factorial(5));
